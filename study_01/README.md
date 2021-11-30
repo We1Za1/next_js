@@ -10,7 +10,6 @@ Link 需要被引入 import Link from 'next/link' 才能够使用，且，关于
 
 同样的 Route 也需要被引入才能够使用 import Route from 'next/router'
 使用方法：Route.push("/pageA")
-<<<<<<< HEAD
 
 4.自定义组件，在本项目中 about 为我自己定义的一个button组件，采用hooks的写法，参数 {children} 用来接收使用该组件时传递的内容
 
@@ -18,6 +17,3 @@ Link 需要被引入 import Link from 'next/link' 才能够使用，且，关于
 Route.push("/querry_test?name=test_C")}} 也可以包装成对象 Route.push({pathname:'/querry_test',query:{name:'test_C'}
 而子组件需要引入 import {withRouter} from 'next/router'; 然后采用hooks的写法 接收参数 {router}，读取参数采用 {router.query.name}
 最后我们需要向外暴露的是 export default withRouter(组件名称)
-
-=======
->>>>>>> c489ef6bafc7f0cb99f72bbb2bef19ffa63eb0a1
