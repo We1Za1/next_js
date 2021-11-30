@@ -1,5 +1,5 @@
 1.熟悉项目搭建 使用 npx create-next-app@latest
-# or
+or
 yarn create next-app 搭建next.js脚手架 删除不需要的部分，开始搭建自己的页面
 
 2.页面结构:page:用来存储所有的页面；public：用来放置一些静态资源；styles：用来存放样式
