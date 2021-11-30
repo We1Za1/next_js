@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
-import Route from 'next/router';
+import Route, { Router } from 'next/router';
 
 import About from './about'
 
@@ -32,6 +32,15 @@ export default function Home() {
         <About>组件测试</About>
 
         <button onClick={gotoA}>去pageA</button>
+
+        <h1 className={styles.title}>
+          Querry to <Link  href="/querry_test?name=test_A"><a>translate A</a></Link>
+        </h1>
+        <h1 className={styles.title}>
+          Querry to <Link  href="/querry_test?name=test_B"><a>translate B</a></Link>
+        </h1>
+
+        <button onClick={()=>{Route.push({pathname:'/querry_test',query:{name:'test_C'}})}}>query Route 测试</button>
 
       </main>
 
