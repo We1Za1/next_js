@@ -19,5 +19,3 @@ Route.push("/querry_test?name=test_C")}} 也可以包装成对象 Route.push({pa
 而子组件需要引入 import {withRouter} from 'next/router'; 然后采用hooks的写法 接收参数 {router}，读取参数采用 {router.query.name}
 最后我们需要向外暴露的是 export default withRouter(组件名称)
 
-=======
->>>>>>> c489ef6bafc7f0cb99f72bbb2bef19ffa63eb0a1
