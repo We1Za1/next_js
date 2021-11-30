@@ -10,7 +10,6 @@ Link 需要被引入 import Link from 'next/link' 才能够使用，且，关于
 
 同样的 Route 也需要被引入才能够使用 import Route from 'next/router'
 使用方法：Route.push("/pageA")
-<<<<<<< HEAD
 
 4.自定义组件，在本项目中 about 为我自己定义的一个button组件，采用hooks的写法，参数 {children} 用来接收使用该组件时传递的内容
 
