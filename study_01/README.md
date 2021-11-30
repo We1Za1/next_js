@@ -17,3 +17,11 @@ Link 需要被引入 import Link from 'next/link' 才能够使用，且，关于
 Route.push("/querry_test?name=test_C")}} 也可以包装成对象 Route.push({pathname:'/querry_test',query:{name:'test_C'}
 而子组件需要引入 import {withRouter} from 'next/router'; 然后采用hooks的写法 接收参数 {router}，读取参数采用 {router.query.name}
 最后我们需要向外暴露的是 export default withRouter(组件名称)
+
+6.路由的6个钩子事件：
+routeChangeStart  ----------------路由跳转时触发
+routeChangeComplete   ------------路由跳转结束触发
+beforeHistoryChange   ------------路由跳转时History发生变化触发
+routeChangeError   ---------------路由跳转发生错误触发
+hanshChangeStart   ---------------哈希路由开始跳转触发
+hashChangeComplete   -------------哈希路由跳转结束触发

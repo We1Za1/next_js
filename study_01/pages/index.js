@@ -2,11 +2,22 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
-import Route, { Router } from 'next/router';
+import Route from 'next/router';
 
 import About from './about'
 
 export default function Home() {
+
+  // routeChangeStart
+  // routeChangeComplete
+  // beforeHistoryChange
+  // routeChangeError
+  // hanshChangeStart
+  // hashChangeComplete
+
+  Route.events.on('routeChangeStart',(...args)=>{
+    console.log("routeChangeStart",args)
+  })
 
   function gotoA(){
     Route.push("/pageA")
