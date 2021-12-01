@@ -25,3 +25,8 @@ beforeHistoryChange   ------------路由跳转时History发生变化触发
 routeChangeError   ---------------路由跳转发生错误触发
 hanshChangeStart   ---------------哈希路由开始跳转触发
 hashChangeComplete   -------------哈希路由跳转结束触发
+
+7.利用 <style jsx> 可以在组件内部进行的样式的编写，但不推荐
+
+8.阅读 NEXT.js 文档，里面对于脚本注入有很大优化，包括3种属性，可以选择在何时加载脚本
+
